@@ -51,6 +51,5 @@ export const globalRouter = [
 ]
 
 export default new Router({
-  mode: 'history',
   routes: [...globalRouter]
 })
