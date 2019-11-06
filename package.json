@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vue/cli": "^3.4.1",
+    "core-js": "^2.6.5",
     "element-ui": "^2.8.2",
     "mxgraph": "^3.9.12",
     "ramda": "^0.26.1",
