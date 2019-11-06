@@ -1,5 +1,9 @@
 # vue-mxgraph-example
 
+## 在线预览
+
+* https://mxgraph.lanniu.top/
+
 ## 这个项目提供vue下mxGraph的示例程序
 
 * 现在只有几个简单的小例子，如果想看mxGraph什么Demo可以给我提issue。
