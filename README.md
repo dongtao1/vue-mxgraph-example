@@ -1,5 +1,7 @@
 # vue-mxgraph-example
 
+![image](http://picture.lanniu.top/vue-mxgraph-example.gif)
+
 ## 在线预览
 
 * https://mxgraph.lanniu.top/
