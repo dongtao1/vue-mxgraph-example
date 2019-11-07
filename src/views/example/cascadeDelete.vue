@@ -1,6 +1,6 @@
 <template>
   <div class="m_container">
-    <div ref="container" class="m_graph_container"></div>
+    <div ref="container" class="graphContainer"></div>
   </div>
 </template>
 
@@ -175,15 +175,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .m_container {
   width: 100%;
   height: 100%;
-}
 
-.m_graph_container {
-  width: 100%;
-  height: calc(100% - 30px);
-  overflow: auto;
+  .graphContainer {
+    width: 100%;
+    height: calc(100% - 30px);
+    overflow: auto;
+  }
 }
 </style>

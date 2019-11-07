@@ -14,3 +14,7 @@ html, body {
 .cm-matchhighlight {
     border-bottom: dashed 1px;
 }
+
+* {
+    box-sizing: border-box;
+}

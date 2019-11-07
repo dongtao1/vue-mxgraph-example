@@ -35,6 +35,14 @@ export const demoRouter = [
       title: '自定义工具箱'
     },
     component: () => import('@/views/example/customToolbar/customToolbar')
+  },
+  {
+    path: 'htmlLabel',
+    name: 'htmlLabel',
+    meta: {
+      title: 'HTML标签'
+    },
+    component: () => import('@/views/example/htmlLabel/htmlLabel')
   }
 ]
 
