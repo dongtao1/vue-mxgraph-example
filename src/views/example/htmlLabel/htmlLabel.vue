@@ -54,7 +54,7 @@ export default {
         return `<div class="cellLabelContainer">
                   <div class="cellIcon"><img alt="icon" src='${myAnimal}'/></div>
                   <div class="cellLabel"><span>${myLabel}</span></div>
-                  <div class="cellState ${myRight ? 'right' : 'error'}"><img alt="icon" src='${myState}'/></div>
+                  <div class="cellState ${myRight ? 'right' : 'error'}" onclick="${this.clickFunc(animal, state)}"><img alt="icon" src='${myState}'/></div>
                 </div>`.replace(/[\r\n]/g, '')
       }
       const style = 'text;strokeColor=none;fillColor=none;resizable=0;'
@@ -63,6 +63,9 @@ export default {
       this.graph.insertVertex(parent, null, getMyTemplate('cat', 'error'), 10, 200, 210, 60, style)
       this.graph.insertVertex(parent, null, getMyTemplate('dog', 'error'), 10, 100, 210, 60, style)
       this.graph.insertVertex(parent, null, getMyTemplate('cat', 'right'), 10, 300, 210, 60, style)
+    },
+    clickFunc(animal, state) {
+      return `alert('点击的动物为：${animal}，状态为：${state}。')`
     }
   },
   mounted() {
@@ -107,6 +110,7 @@ export default {
 
       .cellState {
         padding: 2px;
+        cursor: pointer;
 
         &.right {
           background: #B4E1FF;
