@@ -1,5 +1,13 @@
 <template>
   <div class="edgeStyleContainer">
+    <div class="legendContainer">
+      <ul>
+        <li v-for="key in Object.keys(status)" :key="key">
+          {{key}}
+          <div class="legendColor" :style="{ background: status[key]}"></div>
+        </li>
+      </ul>
+    </div>
     <div class="toolbarContainer">
       <ul>
         <li v-for="item in toolbarItems" :key="item['name']" ref="dragItem">
@@ -183,7 +191,7 @@ export default {
             }
           }
           // 下一个节点为聚合节点
-          if(this.R.equals('Aggregation', nextCellType)){
+          if (this.R.equals('Aggregation', nextCellType)) {
             const edges = this.R.filter(this.R.propEq('target', nextCell), this.R.propOr([], 'edges', nextCell))
             const nodeStatus = this.R.map(this.R.path(['source', 'customerStatus']), edges)
 
@@ -254,6 +262,30 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
+
+  .legendContainer {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 2;
+    background-color: #fff;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+
+        .legendColor{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+  }
 
 
   .toolbarContainer {
