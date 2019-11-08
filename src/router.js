@@ -43,6 +43,14 @@ export const demoRouter = [
       title: 'HTML标签'
     },
     component: () => import('@/views/example/htmlLabel/htmlLabel')
+  },
+  {
+    path: 'edgeStyle',
+    name: 'edgeStyle',
+    meta: {
+      title: '连线样式'
+    },
+    component: () => import('@/views/example/edgeStyle/edgeStyle')
   }
 ]
 
