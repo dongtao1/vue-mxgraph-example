@@ -4,7 +4,7 @@
 
 ## 在线预览
 
-* https://mxgraph.lanniu.top/
+* https://lanniu.github.io/vue-mxgraph-example/dist/
 
 ## 这个项目提供vue下mxGraph的示例程序
 
