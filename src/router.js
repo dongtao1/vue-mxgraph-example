@@ -51,6 +51,14 @@ export const demoRouter = [
       title: '连线样式'
     },
     component: () => import('@/views/example/edgeStyle/edgeStyle')
+  },
+  {
+    path: 'customConnectionConstraints',
+    name: 'customConnectionConstraints',
+    meta: {
+      title: '自定义连接点'
+    },
+    component: () => import('@/views/example/customConnectionConstraints/customConnectionConstraints')
   }
 ]
 
