@@ -59,6 +59,14 @@ export const demoRouter = [
       title: '自定义连接点'
     },
     component: () => import('@/views/example/customConnectionConstraints/customConnectionConstraints')
+  },
+  {
+    path: 'manualDrawing',
+    name: 'manualDrawing',
+    meta: {
+      title: '手动绘图'
+    },
+    component: () => import('@/views/example/manualDrawing/manualDrawing')
   }
 ]
 
