@@ -1,12 +1,10 @@
 ![image](http://picture.lanniu.top/vue-mxgraph.png)
 
-# vue-mxgraph-example
+[在线预览](https://lanniu.github.io/vue-mxgraph-example/dist/)
+
+# vue-mxgraph-example 
 
 ![image](http://picture.lanniu.top/vue-mxgraph-example.gif)
-
-## 在线预览
-
-* https://lanniu.github.io/vue-mxgraph-example/dist/
 
 ## 这个项目提供vue下mxGraph的示例程序
 
