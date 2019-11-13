@@ -1,3 +1,5 @@
+![image](http://picture.lanniu.top/vue-mxgraph.png)
+
 # vue-mxgraph-example
 
 ![image](http://picture.lanniu.top/vue-mxgraph-example.gif)
