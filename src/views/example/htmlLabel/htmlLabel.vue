@@ -59,10 +59,29 @@ export default {
       }
       const style = 'text;strokeColor=none;fillColor=none;resizable=0;'
 
+      const htmlStr = `<p style="margin: 0px; margin-top: 4px;text-align: center">
+                           <i>&lt;&lt;Interface&gt;&gt;</i>
+                           <br/>
+                           <b>Interface</b>
+                       </p>
+                       <hr size="1" />
+                       <p style="margin: 0px; margin-left: 4px">
+                           + field1: Type
+                           <br/>
+                           + field2: Type
+                       </p>
+                       <hr size="1" />
+                       <p style="margin: 0px; margin-left: 4px">
+                           + method1(Type): Type
+                           <br/>
+                           + method2(Type, Type): Type
+                       </p>`.replace(/[\r\n]/g, '')
+
       this.graph.insertVertex(parent, null, getMyTemplate('dog', 'right'), 10, 10, 210, 60, style)
       this.graph.insertVertex(parent, null, getMyTemplate('cat', 'error'), 10, 200, 210, 60, style)
       this.graph.insertVertex(parent, null, getMyTemplate('dog', 'error'), 10, 100, 210, 60, style)
       this.graph.insertVertex(parent, null, getMyTemplate('cat', 'right'), 10, 300, 210, 60, style)
+      this.graph.insertVertex(parent, null, htmlStr, 10, 400, 210, 120, 'align=center;verticalAlign=top;align=left;overflow=fill;fontSize=12;')
     },
     clickFunc(animal, state) {
       return `alert('点击的动物为：${animal}，状态为：${state}。')`
